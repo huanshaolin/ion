@@ -37,7 +37,14 @@ kcpsalt = ""
 # Range of ports that ion accepts WebRTC traffic on
 portrange = [5000, 5200]
 [webrtc.iceserver]
-urls = ["stun:stun.l.google.com:19302"]
+urls = ["stun:23.98.66.159:3478?transport=udp"]
+username = username
+credential = credential
+
+[webrtc.iceserver]
+urls = ["turn:23.98.66.159:3478?transport=udp"]
+username = username
+credential = credential
 
 [rtp]
 # listen port
