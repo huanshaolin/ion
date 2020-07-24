@@ -38,9 +38,13 @@ kcpsalt = ""
 portrange = [5000, 5200]
 [webrtc.iceserver]
 urls = ["turn:23.98.66.159:3478?transport=udp"]
-username = username
-credential = credential
+username = "username"
+credential = "password"
 
+[webrtc.iceserver]
+urls = ["stun:23.98.66.159:3478?transport=udp"]
+username = "username"
+credential = "password"
 
 [rtp]
 # listen port
