@@ -5,7 +5,7 @@ pprof = ":6062"
 dc = "dc1"
 
 # internet ip
-addr = "127.0.0.1"
+addr = "0.0.0.0"
 
 
 [plugins]
@@ -36,10 +36,13 @@ kcpsalt = ""
 [webrtc]
 # Range of ports that ion accepts WebRTC traffic on
 portrange = [5000, 5200]
-[webrtc.iceserver]
+[[webrtc.iceserver]]
 urls = ["turn:23.98.66.159:3478?transport=tcp"]
 username = "username"
 credential = "password"
+[[webrtc.iceserver]]
+urls = ["stun:stun.l.google.com:19302"]
+
 
 [rtp]
 # listen port
