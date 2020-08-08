@@ -20,5 +20,9 @@ COPY --from=0 /biz /usr/local/bin/biz
 
 COPY configs/docker/biz.toml /configs/biz.toml
 
+COPY configs/cert.pem configs/certs/cert.pem 
+
+COPY configs/key.pem configs/certs/key.pem 
+
 ENTRYPOINT ["/usr/local/bin/biz"]
 CMD ["-c", "/configs/biz.toml"]
