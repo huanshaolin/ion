@@ -82,8 +82,3 @@ services:
     networks:
       - ionnet
 
-networks:
-  ionnet:
-    external: true
-    name: ionnet
-    driver: bridge
