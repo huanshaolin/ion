@@ -2,7 +2,7 @@
 pprof = ":6060"
 
 # internet ip
-addr = "127.0.0.1"
+addr = "0.0.0.0"
 
 # data center id
 dc = "dc1"
@@ -19,8 +19,8 @@ addrs = ["etcd:2379"]
 #listen ip port
 host = "0.0.0.0"
 port = "8443"
-# cert= "/configs/certs/cert.pem"
-# key= "/configs/certs/key.pem"
+cert= "/configs/certs/cert.pem"
+key= "/configs/certs/key.pem"
 
 [nats]
 url = "nats://nats:4222"
